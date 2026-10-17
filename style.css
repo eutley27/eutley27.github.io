@@ -130,6 +130,15 @@ section:nth-of-type(even) { background: var(--bg-alt); }
   vertical-align: middle;
 }
 
+/* ---------- coursework ---------- */
+.terms { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 0.75rem; }
+@media (max-width: 600px) { .terms { grid-template-columns: 1fr; } }
+.term { border: 1px solid var(--rule); border-radius: 8px; padding: 1rem 1.2rem; background: var(--bg); }
+.term.current { border-color: var(--accent); }
+.term h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.term ul { margin: 0; padding-left: 1.1rem; font-size: 0.95rem; }
+.term li { margin-bottom: 0.2rem; }
+
 /* ---------- experience timeline ---------- */
 .timeline { border-left: 2px solid var(--rule); padding-left: 1.75rem; }
 .job { position: relative; margin-bottom: 2rem; }
